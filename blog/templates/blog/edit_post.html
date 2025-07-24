@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Редактировать пост{% endblock %}
+
+{% block content %}
+
+  <h2 class="mb-3">Редактировать пост</h2>
+
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+      {{ form.title.label_tag }}
+      {{ form.title }}
+    </div>
+    <div class="mb-3">
+      {{ form.content.label_tag }}
+      {{ form.content }}
+    </div>
+    <div class="mb-3">
+      {{ form.image.label_tag }}
+      {{ form.image }}
+    </div>
+    <button type="submit" class="btn btn-primary">💾 Сохранить изменения</button>
+    <a href="{% url 'post_list' %}" class="btn btn-secondary">⬅ Назад</a>
+  </form>
+{% endblock %}

@@ -1,0 +1,44 @@
+.blog-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-title:hover {
+  color: #333;
+  border-color: #999;
+}
+
+.custom-pagination .page-link {
+  color: black;
+  background: transparent;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.custom-pagination .page-link:hover {
+  background-color: #f2f2f2;
+}
+
+.custom-pagination .active .page-link {
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  border-color: black;
+}
+
+.custom-pagination .disabled .page-link {
+  color: #aaa;
+  pointer-events: none;
+}
+

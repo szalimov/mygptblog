@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Выход{% endblock %}
+
+{% block content %}
+  <h2>🚪 Вы вышли</h2>
+  <a href="{% url 'login' %}" class="btn btn-primary">Войти снова</a>
+{% endblock %}
